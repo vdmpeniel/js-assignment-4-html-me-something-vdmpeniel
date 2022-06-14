@@ -2,27 +2,38 @@
 <html>
    <head>
       <title>Victor Diaz Resume</title>
-      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    </head>
    <body>
       <header>
          <nav>
             <div class="logo">
-               <h1>Resume</h1>
+               <a href="#home">
+                  <div class="isotype"></div>
+                  <h1>Resume</h1>
+               </a>
             </div>
             <div class="menu">
                <ul>
-                  <li>Experience</li>
-                  <li>Education</li>
+                  <li><a href="#intro">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#experience">Education</a></li>
+                  <li><a href="#contact">Contact</a></li>
                </ul>
             </div>
-         </nav>
-         
+         </nav>         
       </header>
 
-      <main class="column"> 
-         <section class="intro container">  
-            <div class="banner"></div>      
+      <main id="home" class="column"> 
+         <section id="intro" class="intro container">  
+            <div class="banner">
+               <div class="quote">
+                  <h2>“Programming is the art of telling another human being what one wants the computer to do.”</h2>
+                  <p>― Donald Ervin Knuth</p>
+               </div>
+            </div>      
             <div class="avatar"></div> 
             <div class="intro-textbox">
                <h2>Victor Diaz</h2>
@@ -32,14 +43,14 @@
          </section>   
 
          <section class="content"> 
-            <article>
+            <article id="about">
                <h2>About</h2>
                <p>
                   Experienced Application Developer with a demonstrated history of working in the financial services industry. Skilled in Java, Angular, PHP, JavaScript, HTML 5, CSS3, Full-Stack Development, CLI, Git. Strong work ethics and teamwork oriented engineering professional. 
                </p>
             </article>
 
-            <article>
+            <article id="experience">
                <h2>Work Experience</h2>
                <div class="container">
                   <div class="company-logo">
@@ -48,8 +59,8 @@
                   <div class="company-data">
                      <h3>Java Software Engineer Consultant</h3>
                      <p class="company-name">Daugherty Business Solutions · Full-time</p>
-                     <p>Mar 2022 - Present · 4 mos</p>
-                     <p>Remote</p>
+                     <p class="company-time-lapse">Mar 2022 - Present · 4 mos</p>
+                     <p class="company-location">Remote</p>
                   </div>
                </div>
 
@@ -60,8 +71,8 @@
                   <div class="company-data">
                      <h3>Software Engineer Global Technology</h3>
                      <p class="company-name">JPMorgan Chase & Co. · Full-time</p>
-                     <p>Jan 2017 - Mar 2022 · 5 yrs 3 mos</p>
-                     <p>Newark, DeNewark</p>
+                     <p class="company-time-lapse">Jan 2017 - Mar 2022 · 5 yrs 3 mos</p>
+                     <p class="company-location">Newark, DeNewark</p>
                   </div>
                </div>
 
@@ -72,21 +83,60 @@
                   <div class="company-data">
                      <h3>Remote Technical Support</h3>
                      <p class="company-name">Support.com</p>
-                     <p>Nov 2013 - Jan 2017 · 3 yrs 3 mos</p>
-                     <p>Remote</p>
+                     <p class="company-time-lapse">Nov 2013 - Jan 2017 · 3 yrs 3 mos</p>
+                     <p class="company-location">Remote</p>
                   </div>
                </div>
                
             </article>   
-         </section>      
+         </section>    
+         
+         <section id="contact" class="container contact-section">            
+            <div class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.3228074462695!2d-75.68915158432476!3d39.68744537945666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c700eb971909c3%3A0x520638dd555e6ca8!2s30%20Cheswold%20Blvd%2C%20Newark%2C%20DE%2019713!5e0!3m2!1sen!2sus!4v1655173883509!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="data">
+               <h2>Contact:</h2>
+               <ul class="static">
+                  <li>
+                     <i class="fa fa-car"></i>
+                     Address: 30 Cheswold Blvd, Apt 1D, DE, 19713
+                  </li>
+                  <li>
+                     <i class="fa fa-phone"></i>
+                     Phone: (702) 739-4751
+                  </li>
+                  <li>
+                     <i class="fa-solid fa-envelope"></i>
+                     Email: vdmpeniel@yahoo.es
+                  </li>
+                  
+               </ul>
+
+               <div class="social">
+                  <ul class="anchor">
+                     <li>                     
+                        <a href="https://www.linkedin.com/in/victor-diaz-2366b598/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                     </li>
+                     <li>
+                        
+                        <a href="https://github.com/vdmpeniel" target="_blank"><i class="fa-brands fa-github-alt"></i></i></a>
+                     </li>
+                     <li>
+                        <a href="https://www.facebook.com/vdmpeniel" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
       </main>
 
       <aside class="column container">
-         <p>this is an example text</p>
+         <p>this is a sample text</p>
       </aside>   
 
       <footer>
-         <p>&copy; 2022</p>
+         <p>Copyright &copy; 2022</p>
       </footer>
    </body>
 </html>
