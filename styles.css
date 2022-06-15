@@ -39,6 +39,9 @@ a:hover{
     width: 35%;
     float: left;
 }
+#mainHeading{
+    color: red;
+}
 
 .logo .isotype{
     /* margin-top: 10%; */
@@ -167,6 +170,9 @@ article > h2{
 }
 article > p{
     line-height: 1.4em;
+}
+.funParagraph{
+    color: green;
 }
 .company-logo{
     float: left;
